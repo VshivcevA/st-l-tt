@@ -1,0 +1,40 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее*/
+:root {
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  color: $text-primary;
+  font-size: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+}
+body {
+  background: $white;
+}
+.wrapper {
+  max-width: $w1;
+  margin: 0 auto;
+  @media (max-width: $w1) {
+    max-width: 900px;
+  }
+  @media (max-width: $w2) {
+    max-width: 700px;
+  }
+  @media (max-width: $w3) {
+    max-width: 300px;
+  }
+  @media (max-width: $w4) {
+    max-width: 280px;
+  }
+}
+.hidden {
+  visibility: hidden;
+  position: absolute;
+}
+.main {
+  background: $white;
+  filter: drop-shadow(0px 2px 14px rgba(0, 0, 0, 0.1));
+}

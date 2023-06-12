@@ -1,0 +1,116 @@
+.footer {
+  &__bg-gray {
+    background: $bg-light-grey;
+  }
+  & a {
+    text-decoration: none;
+    color: $text-primary;
+    opacity: 0.6;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    @media (max-width: $w1) {
+      justify-content: center;
+      & div:not(.footer__main) {
+        display: none;
+      }
+    }
+  }
+  &__main {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 22px;
+    max-width: 292px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid $light-gray;
+    padding-right: 30px;
+    @media (max-width: $w1) {
+      border: none;
+    }
+    & a {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 30px;
+      &:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        width: 16px;
+        height: 17px;
+      }
+    }
+    &-copyright {
+      padding-top: 20px;
+      border-top: 1px solid $light-gray;
+      opacity: 0.6;
+    }
+  }
+
+  &__logo {
+    width: 200px;
+  }
+  &__phone:before {
+    background: url("../../img/phone-call-icon.svg");
+  }
+  &__mail:before {
+    background-image: url("../../img/mail-icon.svg");
+  }
+  & .footer__questions {
+    text-decoration-line: underline;
+    &:before {
+      background-image: url("../../img/questions-icon.svg");
+    }
+  }
+
+  & .footer__feedback {
+    margin-bottom: 20px;
+    text-decoration-line: underline;
+    &:before {
+      background: url("../../img/feadback-icon.svg");
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  &__link {
+  }
+  &__bottom {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 22px;
+    margin: 20px 0;
+    background: $white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: $w1) {
+      align-items: center;
+    }
+  }
+  & .footer__politic {
+    opacity: 1;
+    text-decoration-line: underline;
+    color: #0c5460;
+  }
+  padding-bottom: 10px;
+  background: $white;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.1));
+  margin-bottom: 60px;
+  position: relative;
+  z-index: -1;
+}

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Название проекта</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="page__body">
+    <h1 class="hidden">Салон оптики Vimeo</h1>
+
+    <header class="header">
+      <div class="shadow">
+        <div class="wrapper">
+          <div class="header__top">
+            <img
+              class="header__logo"
+              src="img/logo-vimeo.png"
+              alt="logo vimeo"
+            />
+            <div class="header__salons header-salons">
+              <p class="header-salons__title">Салоны оптики</p>
+              <ul class="header-salons__list">
+                <li class="header-salons__item header-salons__item--current">
+                  <a href="#"> Анапа (39) </a>
+                </li>
+                <li class="header-salons__item">
+                  <a href="#"> Геленджик (5) </a>
+                </li>
+              </ul>
+            </div>
+            <button
+              class="header__appointment header-appointment button--white"
+              data-fancybox
+              data-src="#dialog-content"
+            >
+              <span class="header-appointment__example">
+                <span>Ш Б</span>
+                <span>Н М К</span>
+              </span>
+              <span class="header-appointment__title">
+                Запишитесь на<br />
+                проверку зрения
+              </span>
+            </button>
+            <div class="header__phone header-phone">
+              <a class="header-phone__tel" href="tel:+7 (800) 111-111-1">
+                +7 (800) 111-111-1</a
+              >
+              <a href="#" class="header-phone__callback"> Перезвоните мне </a>
+            </div>
+            <div class="header__icons header-icons">
+              <div class="header-icons__item">
+                <img src="img/heart-icon.svg" alt="favorite" />
+                <span class="header-icons__count">7</span>
+              </div>
+              <div class="header-icons__item">
+                <img src="img/cart-icon.svg" alt="cart" />
+                <p class="header-icons__count">7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="nav">
+        <div class="wrapper">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <span> Очки с диоптриями </span></a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <span>Солнцезащитные очки</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#"> <span>Детские очки</span> </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#"> <span>Контактные линзы</span> </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#"> <span>Проверка зрения</span> </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#"> <span>Акции и скидки</span> </a>
+            </li>
+            <li class="nav__item nav__item--search">
+              <img src="img/search-icon.svg" alt="search icon" />
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="intro">
+        <div class="wrapper">
+          <div class="intro__container">
+            <div class="intro__content">
+              <ul class="pagination">
+                <li class="pagination__item pagination__item--home"></li>
+                <li class="pagination__item">Плановая проверка зрения</li>
+              </ul>
+
+              <h2 class="intro__title">
+                Плановая <span>проверка зрения</span> для тех, кто носит
+                контактные линзы
+              </h2>
+              <p class="intro__text">
+                Как здорово, что вы носите контактные линзы! Это удобный способ
+                коррекции зрения. И безопасный, если вы соблюдаете режим ношения
+                линз, а также каждые полгода проходите экспресс-диагностику у
+                офтальмолога.
+              </p>
+              <p class="intro__text intro__text--description">
+                Экспресс-диагностика – это быстрая проверка состояния глаз, а
+                также оценка остроты зрения. Скриниг не подразумевает подбор
+                коррекции и выписку рецепта.
+              </p>
+              <button
+                data-fancybox
+                data-src="#dialog-content"
+                class="button button--white"
+              >
+                Записаться на проверку зрения
+              </button>
+            </div>
+            <a
+              href="img/intro-photo.jpg"
+              data-fancybox
+              data-caption="Плановая проверка зрения"
+            >
+              <img
+                class="intro__photo"
+                src="img/intro-photo.jpg"
+                alt="ophthalmologist photo"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="wrapper">
+          <div class="advantages__container">
+            <h2 class="advantages__title">
+              Экспресс-проверка зрения позволяет
+            </h2>
+            <ul class="advantages__list">
+              <li class="advantages__item advantage">
+                <div class="advantage__img-bg">
+                  <img
+                    class="advantage__img"
+                    src="img/advantage-1.svg"
+                    alt=""
+                  />
+                </div>
+                <h3 class="advantage__title">
+                  Быстро <span>установить причину</span> зрительного дискомфорта
+                </h3>
+              </li>
+              <li class="advantages__item advantage">
+                <div class="advantage__img-bg">
+                  <img
+                    class="advantage__img"
+                    src="img/advantage-2.svg"
+                    alt=""
+                  />
+                </div>
+                <h3 class="advantage__title">
+                  Убедиться, что ваши контактные линзы по-прежнему вам подходят
+                </h3>
+              </li>
+              <li class="advantages__item advantage">
+                <div class="advantage__img-bg">
+                  <img
+                    class="advantage__img"
+                    src="img/advantage-3.svg"
+                    alt=""
+                  />
+                </div>
+                <h3 class="advantage__title">Оценить состояние роговицы</h3>
+              </li>
+              <li class="advantages__item advantage">
+                <div class="advantage__img-bg">
+                  <img
+                    class="advantage__img"
+                    src="img/advantage-4.svg"
+                    alt=""
+                  />
+                </div>
+                <h3 class="advantage__title">
+                  Обнаружить возрастные изменения зрения (пресбиопия)
+                </h3>
+              </li>
+              <li class="advantages__item advantage">
+                <div class="advantage__img-bg">
+                  <img
+                    class="advantage__img"
+                    src="img/advantage-5.svg"
+                    alt=""
+                  />
+                </div>
+                <h3 class="advantage__title">
+                  <span>Бесплатно подобрать очки</span>, если носите только
+                  контактные линзы
+                </h3>
+              </li>
+              <li class="advantages__item advantage">
+                <div class="advantage__img-bg">
+                  <img
+                    class="advantage__img"
+                    src="img/advantage-6.svg"
+                    alt=""
+                  />
+                </div>
+                <h3 class="advantage__title">
+                  Узнать об альтернативных методах коррекции зрения
+                </h3>
+              </li>
+            </ul>
+            <button
+              data-fancybox
+              data-src="#dialog-content"
+              class="button button--green button--green-arrow advantages__button"
+            >
+              Записаться на проверку зрения
+              <span class="button--arrow"></span>
+            </button>
+            <div class="inspection">
+              <div class="inspection__container">
+                <div class="inspection__content">
+                  <h2 class="inspection__title">Осмотр включает:</h2>
+                  <ul class="inspection__list">
+                    <li class="inspection__item">краткий анамнез</li>
+                    <li class="inspection__item">
+                      оценку посадки и подвижности линзы, времени разрыва
+                      слезной пленки
+                    </li>
+                    <li class="inspection__item">
+                      авторефрактометрию в линзах
+                    </li>
+                    <li class="inspection__item">
+                      осмотр состояния глаза, возможно со специальным красителем
+                      для лучшей визуализации
+                    </li>
+                    <li class="inspection__item">
+                      определение остроты зрения в линзах
+                    </li>
+                    <li class="inspection__item">
+                      обсуждение режима ношения линз и правил ухода за ними
+                      рекомендации специалиста
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="img/inspection-photo.jpg"
+                  data-fancybox
+                  data-caption="inspection photo"
+                >
+                  <img
+                    class="inspection__photo"
+                    src="img/inspection-photo.jpg"
+                    alt="inspection photo"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slider">
+        <div class="wrapper">
+          <h2 class="slider__title">Несколько важных вопросов</h2>
+          <div class="owl-carousel">
+            <div class="card">
+              <div class="card__img">
+                <img
+                  class="card-img-top"
+                  src="img/slider-1.png"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Как часто надо проверять зрение?</h5>
+                <p class="card-text">
+                  Носителям контактных линз - каждые полгода
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img
+                  class="card-img-top"
+                  src="img/slider-2.png"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Сколько длится диагностика?</h5>
+                <p class="card-text">Экспресс-проверка занимает 10-15 минут</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img
+                  class="card-img-top"
+                  src="img/slider-3.png"
+                  alt="Card image cap"
+                />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img
+                  class="card-img-top"
+                  src="img/slider-2.png"
+                  alt="Card image cap"
+                />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img
+                  class="card-img-top"
+                  src="img/slider-3.png"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="slider__note">
+            *для бесплатного получения услуг экспресс-диагностики необходимо
+            оформить Карту Постоянного Клиента. Она выдается в салоне бесплатно
+            при первом визите.
+          </p>
+        </div>
+      </section>
+      <section class="info">
+        <div class="wrapper">
+          <div class="info__container">
+            <div class="info__content">
+              <h2 class="info__title">
+                При каких симптомах следует обратиться к врачу?
+              </h2>
+              <ol class="info__list">
+                <li class="info__item">
+                  Стали хуже видеть в линзах вдаль или наоборот вблизи
+                </li>
+                <li class="info__item">
+                  Дискомфорт после того, как надели контактные линзы
+                </li>
+                <li class="info__item">Наблюдается двоение объектов</li>
+                <li class="info__item">
+                  Ношение контактных линз вызывает сильную сухость глаз
+                </li>
+                <li class="info__item">
+                  Вы отказались от контактных линз из-за дискомфорта
+                </li>
+              </ol>
+              <p class="info__text">
+                Даже если вы не чувствуете зрительного дискомфорта, это не
+                означает, что проблемы не существуют. Человеческий мозг способен
+                адаптироваться под любые изменения в организме, которые мешают
+                его слаженной работе. Кроме того, отклонения от нормы могут быть
+                совсем незначительными и незаметными для вас, но при этом будут
+                влиять на состояние ваших глаз в будущем.
+              </p>
+            </div>
+            <a
+              href="img/info-photo.jpg"
+              data-fancybox
+              data-caption="ophthalmologist inspection photo"
+            >
+              <img
+                class="info__photo"
+                src="img/info-photo.jpg"
+                alt="ophthalmologist inspection photo"
+              />
+            </a>
+          </div>
+          <button
+            data-fancybox
+            data-src="#dialog-content"
+            class="button button--green button--green-arrow advantages__button info__button"
+          >
+            Записаться на проверку зрения
+            <span class="button--arrow"></span>
+          </button>
+        </div>
+      </section>
+      <section class="main-contacts">
+        <!--        <div class="shadow">-->
+        <div class="wrapper">
+          <div class="main-contacts__container">
+            <h3 class="main-contacts__title">
+              Подпишитесь на нашу рассылку<br />
+              и получайте полезные новости
+            </h3>
+            <form
+              class="main-contacts__form"
+              action="https://echo.htmlacademy.ru"
+            >
+              <label for="email-main">
+                <input
+                  required
+                  id="email-main"
+                  name="email"
+                  type="email"
+                  placeholder="Введите свой e-mail"
+                  class="main-contacts__input"
+                />
+              </label>
+              <input
+                type="submit"
+                value="Подписаться"
+                class="main-contacts__submit button button--green"
+              />
+            </form>
+            <div class="main-contacts__social">
+              <h4 class="main-contacts__social-title">
+                МЫ В СОЦ.<br />
+                СЕТЯХ:
+              </h4>
+              <ul class="main-contacts__social-list">
+                <li class="main-contacts__social-item">
+                  <a class="main-contacts__social-link" href="#">
+                    <img
+                      class="main-contacts__social-img"
+                      src="img/vk-icon.svg"
+                      alt="vk"
+                  /></a>
+                </li>
+                <li class="main-contacts__social-item">
+                  <a class="main-contacts__social-link" href="#">
+                    <img
+                      class="main-contacts__social-img"
+                      src="img/facebook-icon.svg"
+                      alt="fb"
+                    />
+                  </a>
+                </li>
+                <li class="main-contacts__social-item">
+                  <a class="main-contacts__social-link" href="#">
+                    <img
+                      class="main-contacts__social-img"
+                      src="img/instagram-icon.svg"
+                      alt="inst"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--        </div>-->
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__bg-gray">
+        <div class="wrapper">
+          <div class="footer__container">
+            <div class="footer__main">
+              <img class="footer__logo" src="img/logo-vimeo.png" alt="" />
+              <a class="footer__phone" href="tel:+7 (800) 111-111-1"
+                >+7 (800) 111-111-1</a
+              >
+              <a class="footer__mail" href="mailto:info@vimeo.ru"
+                >info@vimeo.ru</a
+              >
+              <a class="footer__questions" href="#">Задать вопрос</a>
+              <a class="footer__feedback" href="#">Оставить отзыв</a>
+              <p class="footer__main-copyright">
+                При полном или частичном копировании материала ссылка на сайт
+                обязательна
+              </p>
+            </div>
+            <div class="footer__glasses">
+              <h3 class="footer__title">Очки</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Оправы</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Линзы для очков</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Солнцезащитные очки</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Детские очки</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Изготовление очков</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__services">
+              <h3 class="footer__title">Услуги</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Проверка зрения</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Проверка зрения у детей</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Ремонт очков</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">2 года сервиса</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Доставка</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Лечение кератоконуса</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Центр диагностики зрения</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Сервисное обслуживание</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__contact-lenses">
+              <h3 class="footer__title">Контактные линзы</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Однодневные линзы</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Плановой замены</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Мультифокальные</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Для астигматизма</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Цветные линзы</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Растворы и капли</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Аксессуары</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__info">
+              <h3 class="footer__title">Информация</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">О компании</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Салоны</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Новости</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Поддержка клиентов</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Специалисты</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Вакансии</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Статьи</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Гарантии</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Обмен и возврат</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Оферта</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="footer__bottom">
+          <a class="footer__politic" href="#"> Политика конфиденциальности </a>
+          <a class="footer__copyright" href="#">
+            © Все права защищены авторским правом
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./js/script.js" defer></script>
+
+    <div
+      class="popup"
+      id="dialog-content"
+      style="display: none; max-width: 500px"
+    >
+      <form action="https://echo.htmlacademy.ru">
+        <fieldset class="popup__fieldset">
+          <label class="popup__email" for="email">
+            <input
+              required
+              name="email"
+              id="email"
+              class="main-contacts__input"
+              type="email"
+              placeholder="Введите свой e-mail"
+            />
+          </label>
+          <label class="popup='tel" for="tel">
+            <input
+              required
+              name="tel"
+              id="tel"
+              class="main-contacts__input"
+              type="tel"
+              placeholder="Введите свой телефон"
+            />
+          </label>
+          <input
+            class="checkbox"
+            name="subscription"
+            id="subscription"
+            type="checkbox"
+            checked="checked"
+          />
+          <label class="popup__checkbox-label" for="subscription">
+            Хочу получать информация о новостях и акциях компании
+          </label>
+        </fieldset>
+
+        <input
+          class="button button--green popup__submit"
+          type="submit"
+          value="Отправить форму "
+        />
+      </form>
+    </div>
+  </body>
+</html>

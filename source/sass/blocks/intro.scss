@@ -1,0 +1,47 @@
+.intro {
+  background: $bg-light-grey;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    margin-top: 20px;
+    margin-right: 46px;
+    padding-bottom: 30px;
+
+    @media (max-width: $w1) {
+      margin-right: 0;
+    }
+  }
+  &__photo {
+    @media (max-width: $w1) {
+      display: none;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 50px;
+    //display: inline-block;
+    max-width: 519px;
+    margin-bottom: 10px;
+    @media (max-width: $w1) {
+      font-size: 2.2rem;
+      line-height: 30px;
+    }
+    & span {
+      color: $primary;
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 0.6;
+    margin-bottom: 20px;
+    &--description {
+      font-style: italic;
+      opacity: 1;
+    }
+  }
+}

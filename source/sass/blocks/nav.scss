@@ -1,0 +1,56 @@
+.nav {
+  //background: $primary;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 22px;
+  //не совсем понял дизайн, так что костыль >> search
+  &__list {
+    display: flex;
+    height: 70px;
+    @media (max-width: $w1) {
+      flex-wrap: wrap;
+      height: auto;
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+    @media (max-width: $w1) {
+      padding: 5px;
+    }
+    &:not(:nth-last-child(-n + 2)) span {
+      border-right: 1px solid $text-primary-opacity02;
+      @media (max-width: $w1) {
+        border: none;
+      }
+    }
+    &:first-child span {
+      padding-right: 28px;
+      @media (max-width: $w1) {
+        padding: 0;
+      }
+    }
+    &:not(:first-child) span {
+      padding: 0 28px;
+    }
+    &--search {
+      background: $primary-dark;
+      padding: 0 1000px 0 30px;
+      //не совсем понял дизайн, так что костыль
+      @media (max-width: $w1) {
+        display: none;
+      }
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: $white;
+  }
+}

@@ -1,0 +1,30 @@
+//все на глаз, только функционал
+.popup {
+  & .checkbox {
+    display: none;
+  }
+  & .checkbox:checked + .popup__checkbox-label:before {
+    color: white;
+    background: $primary;
+  }
+  &__checkbox-label {
+    position: relative;
+    display: inline-block;
+    margin: 15px 0;
+    &:before {
+      color: transparent;
+      text-align: center;
+      line-height: 17px;
+      display: inline-block;
+      position: relative;
+      content: "\2713";
+
+      width: 15px;
+      height: 15px;
+      background: $white;
+      border-radius: 3px;
+      box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.3),
+        0px 1px 0px 0px rgba(255, 255, 255, 0.8);
+    }
+  }
+}

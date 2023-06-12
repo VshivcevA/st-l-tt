@@ -1,0 +1,43 @@
+.header-salons {
+  &__title {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 22px;
+  }
+  &__list {
+    display: flex;
+    :not(:last-child) {
+      border-right: 1px solid $light-gray;
+    }
+    :first-child {
+      padding-left: 0;
+    }
+  }
+  &__item {
+    opacity: 0.6;
+    display: flex;
+    position: relative;
+    padding: 0 1rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 22px;
+    & a {
+      color: $text-primary;
+    }
+
+    &--current {
+      & a {
+        color: $primary;
+        opacity: 1;
+      }
+      &:before {
+        position: relative;
+        padding-right: 1rem;
+        content: "";
+        min-width: 13px;
+        height: 16px;
+        background: url("../../img/location-icon.svg") no-repeat;
+      }
+    }
+  }
+}

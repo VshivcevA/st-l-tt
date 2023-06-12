@@ -1,0 +1,48 @@
+.slider {
+  background: $bg-light-grey;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
+  padding-top: 30px;
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__note {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 0.6;
+  }
+  & .owl-carousel {
+    margin-bottom: 20px;
+  }
+}
+.card {
+  width: 370px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  @media (max-width: $w1) {
+    width: 270px;
+  }
+  &-body {
+    height: auto;
+  }
+  &-title {
+  }
+  &-text {
+  }
+  &__img {
+    padding-top: 11px;
+    display: flex;
+    justify-content: center;
+    background: $grey;
+    width: 100%;
+  }
+  &-img-top {
+    display: block;
+    width: 200px !important;
+    position: relative;
+  }
+}
+.owl-stage-outer {
+  padding-bottom: 15px;
+}

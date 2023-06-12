@@ -1,0 +1,30 @@
+.inspection {
+  width: 100%;
+  margin-bottom: 60px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    margin-right: 20px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  &__list {
+    padding-left: 25px;
+  }
+  &__item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  &__photo {
+    @media (max-width: $w1) {
+      display: none;
+    }
+  }
+}

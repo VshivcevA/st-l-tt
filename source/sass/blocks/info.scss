@@ -1,0 +1,43 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    background: $bg-light-grey;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    @media (max-width: $w1) {
+      background: white;
+    }
+  }
+  &__content {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 30px;
+    @media (max-width: $w1) {
+      padding: 0;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    max-width: 400px;
+    margin-bottom: 30px;
+  }
+  &__list {
+    padding-left: 25px;
+    margin-bottom: 30px;
+  }
+  &__photo {
+    @media (max-width: $w1) {
+      display: none;
+    }
+  }
+  &__button {
+    margin: 0 auto 60px;
+  }
+}

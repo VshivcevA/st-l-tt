@@ -1,0 +1,49 @@
+.button {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &--white {
+    background-color: $white;
+    border: 1px solid $primary;
+    &:hover {
+      background: $primary;
+      color: $white;
+    }
+  }
+  &--green {
+    background: linear-gradient(90deg, #6cb644 0%, #82ca2c 100%);
+    border: none;
+    color: $white;
+    border-radius: 35px;
+    box-shadow: 0px 10px 20px rgba(132, 199, 55, 0.3);
+    &:hover {
+      background: linear-gradient(
+        90deg,
+        rgba(108, 182, 68, 0.6) 0%,
+        rgba(130, 202, 44, 0.6) 100%
+      );
+    }
+
+    &-arrow {
+      height: 70px;
+      padding: 5px 87px 5px 30px;
+    }
+  }
+  &--arrow {
+    right: 10px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: $white url("../../img/pagination-icon.svg") no-repeat center;
+    border-radius: 50%;
+  }
+}

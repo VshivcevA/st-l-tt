@@ -1,0 +1,26 @@
+/* GLOBAL */
+@import "global/variables";
+@import "global/global";
+@import "global/fonts";
+
+/* BLOCKS */
+@import "global/owl/owl.carousel.min";
+@import "global/owl/owl.theme.default.min";
+@import "global/boostrap/bootstrap";
+
+@import "blocks/header";
+@import "blocks/header/header-salons";
+@import "blocks/header/header-appointment";
+@import "blocks/header/header-phone";
+@import "blocks/header/header-icons";
+@import "blocks/nav";
+@import "blocks/pagination";
+@import "blocks/intro";
+@import "blocks/button";
+@import "blocks/advantages";
+@import "blocks/inspection";
+@import "blocks/slider";
+@import "blocks/info";
+@import "blocks/main-contacts";
+@import "blocks/footer";
+@import "blocks/modal";

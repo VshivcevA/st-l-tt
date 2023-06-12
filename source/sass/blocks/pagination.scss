@@ -1,0 +1,26 @@
+.pagination {
+  opacity: 0.6;
+  display: flex;
+  @media (max-width: $w1) {
+    display: none;
+  }
+  &__item {
+    padding-right: 20px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 22px;
+    &:not(:first-child) {
+      padding-left: 10px;
+    }
+    &:first-child {
+      list-style: none;
+    }
+    &--home {
+      width: 20px;
+      height: 20px;
+      background: url("../../img/home-icon.svg") no-repeat;
+    }
+  }
+  list-style-image: url("../../img/pagination-icon.svg");
+  margin-bottom: 30px;
+}
