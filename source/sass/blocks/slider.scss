@@ -25,6 +25,9 @@
   }
   &-body {
     height: auto;
+    z-index: 1;
+    position: relative;
+    //background-color: white;
   }
   &-title {
   }
@@ -36,6 +39,17 @@
     justify-content: center;
     background: $grey;
     width: 100%;
+    position: relative;
+    height: 160px;
+    &:before {
+      position: absolute;
+      width: 300px;
+      height: 200px;
+      top: -20px;
+      content: "";
+      background: url("../../img/mask-slider.png") no-repeat center;
+      z-index: 1;
+    }
   }
   &-img-top {
     display: block;
