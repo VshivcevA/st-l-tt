@@ -1,1 +1,0 @@
-const wight=document.documentElement.clientWidth;let items=3;wight<1200&&(items=1),$(document).ready((function(){$(".owl-carousel").owlCarousel({items:items,lazyLoad:!0})})),Fancybox.bind("[data-fancybox]",{});

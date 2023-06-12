@@ -20,7 +20,7 @@ const sass = gulpSass(dartSass);
 let isDevelopment = true;
 
 export function processMarkup() {
-  return gulp.src("source/*.html").pipe(gulp.dest("build"));
+  return gulp.src("source/*.html").pipe(gulp.dest("docs"));
 }
 
 export function lintBem() {
@@ -40,7 +40,7 @@ export function processStyles() {
     .pipe(plumber())
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss([postUrl({ assetsPath: "../" }), autoprefixer(), csso()]))
-    .pipe(gulp.dest("build/css", { sourcemaps: isDevelopment }))
+    .pipe(gulp.dest("docs/css", { sourcemaps: isDevelopment }))
     .pipe(browser.stream());
 }
 
@@ -48,7 +48,7 @@ export function processScripts() {
   return gulp
     .src("source/js/**/*.js")
     .pipe(terser())
-    .pipe(gulp.dest("build/js"))
+    .pipe(gulp.dest("docs/js"))
     .pipe(browser.stream());
 }
 
@@ -56,7 +56,7 @@ export function optimizeImages() {
   return gulp
     .src("source/img/**/*.{png,jpg}")
     .pipe(gulpIf(!isDevelopment, squoosh()))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("docs/img"));
 }
 
 export function createWebp() {
@@ -67,14 +67,14 @@ export function createWebp() {
         webp: {},
       })
     )
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("docs/img"));
 }
 
 export function optimizeVector() {
   return gulp
     .src(["source/img/**/*.svg", "!source/img/icons/**/*.svg"])
     .pipe(svgo())
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("docs/img"));
 }
 
 export function createStack() {
@@ -82,7 +82,7 @@ export function createStack() {
     .src("source/img/icons/**/*.svg")
     .pipe(svgo())
     .pipe(stacksvg())
-    .pipe(gulp.dest("build/img/icons"));
+    .pipe(gulp.dest("docs/img/icons"));
 }
 
 export function copyAssets() {
@@ -97,13 +97,13 @@ export function copyAssets() {
         base: "source",
       }
     )
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("docs"));
 }
 
 export function startServer(done) {
   browser.init({
     server: {
-      baseDir: "build",
+      baseDir: "docs",
     },
     cors: true,
     notify: false,

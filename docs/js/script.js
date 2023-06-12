@@ -1,0 +1,1 @@
+const wight=document.documentElement.clientWidth;let items=3;wight<1200&&(items=1),$(document).ready((function(){$(".owl-carousel").owlCarousel({items:items,loop:!0,autoplay:!0,autoplayTimeout:5e3,autoplayHoverPause:!0,lazyLoad:!0})})),Fancybox.bind("[data-fancybox]",{});

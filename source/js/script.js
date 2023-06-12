@@ -8,10 +8,10 @@ if (wight < 1200) {
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     items: items,
-    // loop: true,
-    // autoplay: true,
-    // autoplayTimeout: 5000,
-    // autoplayHoverPause: true,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
     lazyLoad: true,
   });
 });
